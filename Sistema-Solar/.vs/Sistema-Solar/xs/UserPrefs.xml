@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{8C540862-0C8B-397A-18E9-25DFBCEC27E8}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b1602f19-61df-4c6c-97ea-3c3c18048776" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.unity.render-pipelines.universal@39c80789bb81/Shaders/Lit.shader">
+    <Files>
+      <File FileName="Assets/Scripts/RotateAround.cs" Line="1" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@39c80789bb81/Shaders/Lit.shader" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sistema-Solar" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
