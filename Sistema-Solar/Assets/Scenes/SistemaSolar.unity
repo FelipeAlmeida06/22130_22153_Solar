@@ -243,6 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2739627}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &2739633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +448,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.8229665, g: 0.9528302, b: 0.31910825, a: 1}
-  m_Intensity: 3
+  m_Intensity: 10
   m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -624,6 +626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 107178758}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &107178764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 325765403}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &325765409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +931,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
+  - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -973,7 +980,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 120
-  field of view: 100
+  field of view: 71.5
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1025,6 +1032,7 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
+    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
@@ -1061,6 +1069,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72586429d75744188b9356863980a879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &330585549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b98221a67114b42b72371300e79747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!1 &364762713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,116 +1192,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364762713}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &424128795
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 424128796}
-  - component: {fileID: 424128799}
-  - component: {fileID: 424128798}
-  - component: {fileID: 424128797}
-  m_Layer: 0
-  m_Name: AnelSaturno
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &424128796
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424128795}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.20364177, y: -0, z: -0, w: 0.97904545}
-  m_LocalPosition: {x: -10, y: 2.5828617, z: 0.08854103}
-  m_LocalScale: {x: 0.11111111, y: 0.1111111, z: 0.1111111}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1969389626}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &424128797
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424128795}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &424128798
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424128795}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b75d418ec1d244bf084fcf72e7580002, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &424128799
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424128795}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &452943508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 487013470}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &487013476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,6 +1470,7 @@ GameObject:
   - component: {fileID: 513385434}
   - component: {fileID: 513385433}
   - component: {fileID: 513385436}
+  - component: {fileID: 513385437}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1664,6 +1580,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 513385428}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!82 &513385434
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1671,15 +1589,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513385428}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 71a7b30e419b94e31ada724423f865e6, type: 3}
   m_Resource: {fileID: 8300000, guid: 71a7b30e419b94e31ada724423f865e6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1789,6 +1707,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 35
+--- !u!114 &513385437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513385428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 513385428}
+  planetMusic: {fileID: 513385434}
+  cameraController: {fileID: 330585549}
 --- !u!1 &535870627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,6 +1846,7 @@ GameObject:
   - component: {fileID: 551008654}
   - component: {fileID: 551008653}
   - component: {fileID: 551008656}
+  - component: {fileID: 551008657}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -2027,6 +1961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 452943508}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &551008654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,15 +1984,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551008648}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 955c1bb579f6243e7bd95145fd406400, type: 3}
   m_Resource: {fileID: 8300000, guid: 955c1bb579f6243e7bd95145fd406400, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2152,6 +2088,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 13
+--- !u!114 &551008657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551008648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 551008648}
+  planetMusic: {fileID: 551008655}
+  cameraController: {fileID: 330585549}
 --- !u!1 &572670552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,6 +2227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 572670552}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &572670558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2342,6 +2295,7 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
+    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
@@ -2564,6 +2518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 795872151}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &795872157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,10 +2582,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
-  m_Colliders: []
-  m_PreviousLayer: 0
-  m_PreviousPriority: 0
-  m_InternalProfile: {fileID: 0}
 --- !u!4 &832575519
 Transform:
   m_ObjectHideFlags: 0
@@ -2769,6 +2721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 844524928}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &844524934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2813,6 +2767,7 @@ GameObject:
   - component: {fileID: 886807469}
   - component: {fileID: 886807471}
   - component: {fileID: 886807472}
+  - component: {fileID: 886807473}
   m_Layer: 0
   m_Name: Tropical
   m_TagString: Untagged
@@ -2903,7 +2858,7 @@ Transform:
   m_GameObject: {fileID: 886807464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 373.7, y: 0, z: 1}
+  m_LocalPosition: {x: 373.7, y: 0, z: -15}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2923,6 +2878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &886807470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2961,12 +2918,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: bd96b139af5214578ac9e399e1e1120c, type: 3}
+  m_Resource: {fileID: 8300000, guid: bd96b139af5214578ac9e399e1e1120c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3048,6 +3005,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &886807473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886807464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 886807464}
+  planetMusic: {fileID: 886807472}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1096151716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3280,6 +3252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1128609724}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1128609730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,6 +3298,7 @@ GameObject:
   - component: {fileID: 1171193514}
   - component: {fileID: 1171193513}
   - component: {fileID: 1171193516}
+  - component: {fileID: 1171193517}
   m_Layer: 0
   m_Name: Marte
   m_TagString: Untagged
@@ -3433,6 +3408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1171193508}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1171193514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,15 +3431,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171193508}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7bf16cf31b45d4d7f97bc709b118b01d, type: 3}
   m_Resource: {fileID: 8300000, guid: 7bf16cf31b45d4d7f97bc709b118b01d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3558,6 +3535,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 24
+--- !u!114 &1171193517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171193508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1171193508}
+  planetMusic: {fileID: 1171193515}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1463243119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,6 +3566,7 @@ GameObject:
   - component: {fileID: 1463243124}
   - component: {fileID: 1463243126}
   - component: {fileID: 1463243127}
+  - component: {fileID: 1463243128}
   m_Layer: 0
   m_Name: Swamp
   m_TagString: Untagged
@@ -3664,7 +3657,7 @@ Transform:
   m_GameObject: {fileID: 1463243119}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 352.1, y: 0, z: 1}
+  m_LocalPosition: {x: 352.1, y: 0, z: 15}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3684,6 +3677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 69496168}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1463243125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3719,15 +3714,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463243119}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: bd96b139af5214578ac9e399e1e1120c, type: 3}
+  m_Resource: {fileID: 8300000, guid: bd96b139af5214578ac9e399e1e1120c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3809,6 +3804,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1463243128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463243119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1463243119}
+  planetMusic: {fileID: 1463243127}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1532647624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,7 +3849,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.2, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1969389626}
@@ -3888,7 +3898,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b75d418ec1d244bf084fcf72e7580002, type: 2}
+  - {fileID: 2100000, guid: c342399520bee4a42a63d3e198166312, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3917,7 +3927,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532647624}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1532647629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4164,6 +4174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1614951625}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1614951631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,6 +4455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1615569258}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1615569267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4456,6 +4470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!1 &1635441803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,6 +4489,7 @@ GameObject:
   - component: {fileID: 1635441810}
   - component: {fileID: 1635441811}
   - component: {fileID: 1635441812}
+  - component: {fileID: 1635441813}
   m_Layer: 0
   m_Name: Terra
   m_TagString: Untagged
@@ -4605,12 +4622,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635441803}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4bbfa3caa7fd544cf9258c9306e4c65d, type: 3}
   m_Resource: {fileID: 8300000, guid: 4bbfa3caa7fd544cf9258c9306e4c65d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
@@ -4708,6 +4725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1635441812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4721,6 +4740,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
+--- !u!114 &1635441813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635441803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1635441803}
+  planetMusic: {fileID: 1635441810}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1680061866
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,6 +4881,7 @@ GameObject:
   - component: {fileID: 1718825437}
   - component: {fileID: 1718825436}
   - component: {fileID: 1718825439}
+  - component: {fileID: 1718825440}
   m_Layer: 0
   m_Name: Netuno
   m_TagString: Untagged
@@ -4956,6 +4993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 125624135}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1718825437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4977,15 +5016,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718825431}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 000349f734db64a2e8a4ec5d3161d557, type: 3}
   m_Resource: {fileID: 8300000, guid: 000349f734db64a2e8a4ec5d3161d557, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5081,6 +5120,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 5
+--- !u!114 &1718825440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718825431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1718825431}
+  planetMusic: {fileID: 1718825438}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1816830111
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,6 +5151,7 @@ GameObject:
   - component: {fileID: 1816830116}
   - component: {fileID: 1816830118}
   - component: {fileID: 1816830119}
+  - component: {fileID: 1816830120}
   m_Layer: 0
   m_Name: "An\xE3 Vermelha"
   m_TagString: Untagged
@@ -5187,7 +5242,7 @@ Transform:
   m_GameObject: {fileID: 1816830111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 325, y: 0, z: 1}
+  m_LocalPosition: {x: 325, y: 0, z: 30}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5207,6 +5262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 364762713}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1816830117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5242,15 +5299,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816830111}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 10075a7aa0b3b4915830cc10d2a20d93, type: 3}
+  m_Resource: {fileID: 8300000, guid: 10075a7aa0b3b4915830cc10d2a20d93, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5332,6 +5389,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1816830120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816830111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1816830111}
+  planetMusic: {fileID: 1816830119}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1863071922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,6 +5420,7 @@ GameObject:
   - component: {fileID: 1863071928}
   - component: {fileID: 1863071927}
   - component: {fileID: 1863071930}
+  - component: {fileID: 1863071931}
   m_Layer: 0
   m_Name: Mercurio
   m_TagString: Untagged
@@ -5457,6 +5530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1863071922}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!82 &1863071928
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5464,15 +5539,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863071922}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: daaf94cf2a1624cdebd9e5c676b8d2a7, type: 3}
   m_Resource: {fileID: 8300000, guid: daaf94cf2a1624cdebd9e5c676b8d2a7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5582,6 +5657,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 48
+--- !u!114 &1863071931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863071922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1863071922}
+  planetMusic: {fileID: 1863071928}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1885550324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,6 +5689,7 @@ GameObject:
   - component: {fileID: 1885550331}
   - component: {fileID: 1885550332}
   - component: {fileID: 1885550333}
+  - component: {fileID: 1885550334}
   m_Layer: 0
   m_Name: Sol
   m_TagString: Untagged
@@ -5732,12 +5823,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885550324}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 34624889f72024eb99d0d3bef5579d41, type: 3}
   m_Resource: {fileID: 8300000, guid: 34624889f72024eb99d0d3bef5579d41, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
@@ -5835,6 +5926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1885550333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5848,6 +5941,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  music: {fileID: 0}
+  cameraDistance: 200
+--- !u!114 &1885550334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885550324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1885550324}
+  planetMusic: {fileID: 1885550331}
+  cameraController: {fileID: 330585549}
+--- !u!1 &1888972145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1888972147}
+  - component: {fileID: 1888972146}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1888972146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888972145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf4e39e5af7941f086ed6cefb12b8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1888972147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888972145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 21.000002, z: 10.000002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960429943
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,6 +6126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1960429943}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &1960429949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6016,6 +6172,7 @@ GameObject:
   - component: {fileID: 1969389628}
   - component: {fileID: 1969389627}
   - component: {fileID: 1969389630}
+  - component: {fileID: 1969389631}
   m_Layer: 0
   m_Name: Saturno
   m_TagString: Untagged
@@ -6113,7 +6270,6 @@ Transform:
   - {fileID: 1096151717}
   - {fileID: 1532647625}
   - {fileID: 1960429944}
-  - {fileID: 424128796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.5, y: 0, z: 0}
 --- !u!114 &1969389627
@@ -6129,6 +6285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1096151716}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!82 &1969389628
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6136,15 +6294,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969389622}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7bb6dacdd7c9941e0bc92aad606a6a8d, type: 3}
   m_Resource: {fileID: 8300000, guid: 7bb6dacdd7c9941e0bc92aad606a6a8d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6254,6 +6412,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 9
+--- !u!114 &1969389631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969389622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1969389622}
+  planetMusic: {fileID: 1969389628}
+  cameraController: {fileID: 330585549}
 --- !u!1 &1983944137
 GameObject:
   m_ObjectHideFlags: 0
@@ -6378,6 +6551,7 @@ GameObject:
   - component: {fileID: 2020364717}
   - component: {fileID: 2020364719}
   - component: {fileID: 2020364720}
+  - component: {fileID: 2020364721}
   m_Layer: 0
   m_Name: "Plut\xE3o"
   m_TagString: Untagged
@@ -6488,6 +6662,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1602497760}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &2020364718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6523,15 +6699,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020364712}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: a92eec316ad46470cab262c1d3fffb2e, type: 3}
+  m_Resource: {fileID: 8300000, guid: a92eec316ad46470cab262c1d3fffb2e, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6613,6 +6789,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2020364721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020364712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2020364712}
+  planetMusic: {fileID: 2020364720}
+  cameraController: {fileID: 330585549}
 --- !u!1 &2044792932
 GameObject:
   m_ObjectHideFlags: 0
@@ -6629,6 +6820,7 @@ GameObject:
   - component: {fileID: 2044792938}
   - component: {fileID: 2044792937}
   - component: {fileID: 2044792940}
+  - component: {fileID: 2044792941}
   m_Layer: 0
   m_Name: Urano
   m_TagString: Untagged
@@ -6744,6 +6936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 535870627}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!82 &2044792938
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6751,15 +6945,15 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044792932}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 142246003f18048969d01510294c3753, type: 3}
   m_Resource: {fileID: 8300000, guid: 142246003f18048969d01510294c3753, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6869,6 +7063,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1885550328}
   speed: 6
+--- !u!114 &2044792941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044792932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9673fe5ab3445af9724b0c773bbfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2044792932}
+  planetMusic: {fileID: 2044792938}
+  cameraController: {fileID: 330585549}
 --- !u!1 &2110048512
 GameObject:
   m_ObjectHideFlags: 0
@@ -6993,6 +7202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2110048512}
+  music: {fileID: 0}
+  cameraDistance: 200
 --- !u!114 &2110048518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7041,3 +7252,4 @@ SceneRoots:
   - {fileID: 1816830115}
   - {fileID: 1463243123}
   - {fileID: 886807468}
+  - {fileID: 1888972147}
